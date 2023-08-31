@@ -4,164 +4,193 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="body bg_white">
     <header class="header">
         <a href="#" class="header__logo">
-            <img class="img" src="" alt="" srcset="">
+            <img class="img" src="./assets/img/logo.svg" alt="Logotype">
         </a>
         <nav class="header__nav">
             <ul class="nav__container">
-                <li class="nav__list_item text font_black">ABOUT</li>
-                <li class="nav__list_item text font_black">PROJECT</li>
-                <li class="nav__list_item text font_black">CONTACTS</li>
+                <li class="nav__list_item text font_black">
+                    <a href="#">ABOUT</a>    
+                </li>
+                <li class="nav__list_item text font_black">
+                    <a href="#">PROJECT</a>
+                </li>
+                <li class="nav__list_item text font_black">
+                    <a href="#">CONTACTS</a>
+                </li>
             </ul>
         </nav>
     </header>
     <main class="main">
         <section class="first_page__container">
             <div class="first_page__title_block">
-                <h1 class="title_block__title title_h1 font_black">BRINGING  YOUR IDEAS  TO  LIFE </h1>
+                <h1 class="title_block__title title_h1 font_black">BRINGING  YOUR</h1>
+                <!-- <h1 class="title_block__title title_h1 font_black">IDEAS  TO  LIFE </h1> -->
                 <div class="title_block__image_container">
-                    <img class="img" src="" alt="" srcset="">
+                    <img class="img" src="./assets/img/first_page_header.png" alt="">
                 </div>
+                <h1 class="title_block__title title_h1 font_black">IDEAS  TO  LIFE </h1>
                 <p class="title_block__text text font_black">
                     Bring your ideas to life with our expert designers. We specialize in creating stunning visuals that represent your brand and responate with your audience. Contacts us today!
                 </p>
             </div>
             <div class="first_page__button_block">
-                <a href="#" class="button_block__button button button_orange font_black">CONTACTS US</a>
-                <a href="#" class="button_block__button button button_orange font_orange">CONTACTS US</a>
+                <a href="#" class="button_block__button button button_orange text text_button font_black">CONTACTS US</a>
+                <a href="#" class="button_block__button button button_transparent text text_button font_orange">CONTACTS US</a>
             </div>
             <div class="first_page__image_block">
-                <img class="img" src="" alt="" srcset="">
+                <img class="img" src="./assets/img/first_page_main.png" alt="First page illustration">
             </div>
         </section>
         <section class="about_page__container">
             <h4 class="about_page__title title_h4 font_black">ABOUT ME</h4>
             <p class="about_page__text text_h1 font_black">
-                COLLABORATE WITH ME, A PASSIONATE AND INNOVATIVE NYC−BASED FREELANCE GRAPHIC DESIGNER, TO ELEVATE YOUR BRAND’S VISUAL IDENTITY TODAY.
+                COLLABORATE WITH ME, A PASSIONATE AND INNOVATIVE NYC−BASED FREELANCE GRAPHIC DESIGNER, TO ELEVATE YOUR BRAND’S
+                VISUAL IDENTITY TODAY.
             </p>
         </section>
-        <section class="services_page__container bg_black">
-            <h2 class="services_page__title title_h2 font_white">SERVICES</h2>
-            <ul class="services_page__dropdown">
-                <li class="dropdown__list_item dropdown_active">
-                    <div class="dropdown__header">
-                        <h3 class="dropdown__title title_h3 font_white">UI/UX DESIGN</h3>
-                        <div class="dropdown__button button">
-                            <img class="img" src="" alt="" srcset="">
+        <section class="services_page bg_black">
+            <div class="services_page__container">
+                <h2 class="services_page__title title_h2 font_white">SERVICES</h2>
+                <ul class="services_page__dropdown">
+                    <li class="dropdown__list_item dropdown_active">
+                        <div class="dropdown__header">
+                            <h3 class="dropdown__title title_h3 font_white">UI/UX DESIGN</h3>
+                            <div class="dropdown__button button">
+                                <img class="img dropdown_button__active" src="./assets/img/vectors/arrow_up_orange_big.svg" alt="">
+                                <img class="img dropdown_button__close" src="./assets/img/vectors/arrow_right_white_big.svg" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="dropdown__image_block">
-                        <img class="img" src="" alt="" srcset="">
-                    </div>
-                </li>
-                <li class="dropdown__list_item dropdown_active">
-                    <div class="dropdown__header">
-                        <h3 class="dropdown__title title_h3 font_white">GRAPHIC DESIGN</h3>
-                        <div class="dropdown__button button">
-                            <img class="img" src="" alt="" srcset="">
+                        <div class="dropdown__image_block">
+                            <img class="img" src="./assets/img/services.png" alt="Portfolio image">
                         </div>
-                    </div>
-                    <div class="dropdown__image_block">
-                        <img class="img" src="" alt="" srcset="">
-                    </div>
-                </li>
-                <li class="dropdown__list_item dropdown_active">
-                    <div class="dropdown__header">
-                        <h3 class="dropdown__title title_h3 font_white">ILLUSTRATION</h3>
-                        <div class="dropdown__button button">
-                            <img class="img" src="" alt="" srcset="">
+                    </li>
+                    <li class="dropdown__list_item">
+                        <div class="dropdown__header">
+                            <h3 class="dropdown__title title_h3 font_white">GRAPHIC DESIGN</h3>
+                            <div class="dropdown__button button">
+                                <img class="img dropdown_button__active" src="./assets/img/vectors/arrow_up_orange_big.svg" alt="">
+                                <img class="img dropdown_button__close" src="./assets/img/vectors/arrow_right_white_big.svg" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="dropdown__image_block">
-                        <img class="img" src="" alt="" srcset="">
-                    </div>
-                </li>
-                <li class="dropdown__list_item dropdown_active">
-                    <div class="dropdown__header">
-                        <h3 class="dropdown__title title_h3 font_white">LOGO AND BRANDING</h3>
-                        <div class="dropdown__button button">
-                            <img class="img" src="" alt="" srcset="">
+                        <div class="dropdown__image_block">
+                            <img class="img" src="./assets/img/services.png" alt="Portfolio image">
                         </div>
-                    </div>
-                    <div class="dropdown__image_block">
-                        <img class="img" src="" alt="" srcset="">
-                    </div>
-                </li>
-                <li class="dropdown__list_item dropdown_active">
-                    <div class="dropdown__header">
-                        <h3 class="dropdown__title title_h3 font_white">DEVELOPMENT</h3>
-                        <div class="dropdown__button button">
-                            <img class="img" src="" alt="" srcset="">
+                    </li>
+                    <li class="dropdown__list_item">
+                        <div class="dropdown__header">
+                            <h3 class="dropdown__title title_h3 font_white">ILLUSTRATION</h3>
+                            <div class="dropdown__button button">
+                                <img class="img dropdown_button__active" src="./assets/img/vectors/arrow_up_orange_big.svg" alt="">
+                                <img class="img dropdown_button__close" src="./assets/img/vectors/arrow_right_white_big.svg" alt="">
+                            </div>
                         </div>
-                    </div>
-                    <div class="dropdown__image_block">
-                        <img class="img" src="" alt="" srcset="">
-                    </div>
-                </li>
-            </ul>
-        </section>
-        <section class="project_page__container bg_black">
-            <h2 class="project_page__title title_h2 font_white">PROJECT</h2>
-            <div class="project_page__projects">
-                <div class="projects__image_container">
-                    <img class="img" src="" alt="">
-                </div>
-                <div class="projects__block">
-                    <p class="projects__text text font_white">UI/UX DESIGN</p>
-                    <h4 class="projects__title title_h4 font_white">PRODUCTIVITY TOOL REDESIGN</h4>
-                    <p class="projects__text text font_white">Bring your ideas to life with our expert designers. We specialize in creating stunning visuals that represent your brand and responate with your audience. Contacts us today.</p>
-                    <div class="projects__split_block">
-                        <div class="split_block__part">
-                            <p class="projects__text text font_white">TIME FRAME</p>
-                            <p class="projects__text text font_white">Bring your ideas to life with our expert designers. We specialize in creating stunning visuals</p>
+                        <div class="dropdown__image_block">
+                            <img class="img" src="./assets/img/services.png" alt="Portfolio image">
                         </div>
-                        <div class="split_block__part">
-                            <p class="projects__text text font_white">COVERAGE</p>
-                            <p class="projects__text text font_white">Bring your ideas to life with our expert designers. We specialize in creating stunning visuals</p>
+                    </li>
+                    <li class="dropdown__list_item">
+                        <div class="dropdown__header">
+                            <h3 class="dropdown__title title_h3 font_white">LOGO AND BRANDING</h3>
+                            <div class="dropdown__button button">
+                                <img class="img dropdown_button__active" src="./assets/img/vectors/arrow_up_orange_big.svg" alt="">
+                                <img class="img dropdown_button__close" src="./assets/img/vectors/arrow_right_white_big.svg" alt="">
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="projects__block">
-                    <div class="projects__image_container">
-                        <img class="img" src="" alt="">
-                    </div>
-                    <p class="projects__text text font_white">LOGO DESIGN</p>
-                    <h4 class="projects__title title_h4 font_white">SI MARI LOGO DESIGN</h4>
-                </div>
-                <div class="projects__block">
-                    <div class="projects__image_container">
-                        <img class="img" src="" alt="">
-                    </div>
-                    <p class="projects__text text font_white">UX/UI DESIGN</p>
-                    <h4 class="projects__title title_h4 font_white">WEB-SITE SISONA COSMETIC</h4>
-                </div>
+                        <div class="dropdown__image_block">
+                            <img class="img" src="./assets/img/services.png" alt="Portfolio image">
+                        </div>
+                    </li>
+                    <li class="dropdown__list_item">
+                        <div class="dropdown__header">
+                            <h3 class="dropdown__title title_h3 font_white">DEVELOPMENT</h3>
+                            <div class="dropdown__button button">
+                                <img class="img dropdown_button__active" src="./assets/img/vectors/arrow_up_orange_big.svg" alt="">
+                                <img class="img dropdown_button__close" src="./assets/img/vectors/arrow_right_white_big.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="dropdown__image_block">
+                            <img class="img" src="./assets/img/services.png" alt="Portfolio image">
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section class="feedback__container bg_orange">
-            <h2 class="feedback__title title_h2 font_white">TESTIMONIALS</h2>
-            <div class="feedback__block">
-                <p class="feedback__text text_feedback font_white">Working with Portfolio was an absolute pleasure. She took the time to understans our brand and vision, and created stunning designs that exceded our expectations. Highly recomend!</p>
-                <div class="feedback__author">
-                    <p class="author__text title_h4 font_white">John</p>
-                    <p class="author__text title_h4 font_white">Creator_Portfolio</p>
+        <section class="project_page bg_black">
+            <div class="project_page__container">
+                <h2 class="project_page__title title_h2 font_white">PROJECT</h2>
+                <div class="project_page__projects">
+                    <div class="projects__block">
+                        <div class="projects__image_container">
+                            <img class="img projects__image" src="./assets/img/projects1.png" alt="Portfolio image">
+                        </div>
+                    </div>
+                    <div class="projects__block">
+                        <p class="projects__text text font_white">UI/UX DESIGN</p>
+                        <h4 class="projects__title title_h4 font_white">PRODUCTIVITY TOOL REDESIGN</h4>
+                        <p class="projects__text text font_white">Bring your ideas to life with our expert designers. We specialize in creating stunning visuals that represent your brand and responate with your audience. Contacts us today.</p>
+                        <div class="projects__split_block">
+                            <div class="split_block__part">
+                                <p class="projects__text text font_white">TIME FRAME</p>
+                                <p class="projects__text text font_white">Bring your ideas to life with our expert designers. We specialize in creating stunning visuals</p>
+                            </div>
+                            <div class="split_block__part">
+                                <p class="projects__text text font_white">COVERAGE</p>
+                                <p class="projects__text text font_white">Bring your ideas to life with our expert designers. We specialize in creating stunning visuals</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="projects__block">
+                        <div class="projects__image_container">
+                            <img class="img projects__image" src="./assets/img/projects2.png" alt="Portfolio image">
+                        </div>
+                        <p class="projects__text text font_white">LOGO DESIGN</p>
+                        <h4 class="projects__title title_h4 font_white">SI MARI LOGO DESIGN</h4>
+                    </div>
+                    <div class="projects__block">
+                        <div class="projects__image_container">
+                            <img class="img projects__image" src="./assets/img/projects3.png" alt="Portfolio image">
+                        </div>
+                        <p class="projects__text text font_white">UX/UI DESIGN</p>
+                        <h4 class="projects__title title_h4 font_white">WEB-SITE SISONA COSMETIC</h4>
+                    </div>
                 </div>
             </div>
-            <div class="feedback__arrows">
-                <div class="arrows__left">
-                    <img class="img" src="" alt="" srcset="">
+        </section>
+        <section class="feedback bg_orange">
+            <div class="feedback__container">
+                <h2 class="feedback__title title_h2 font_white">TESTIMONIALS</h2>
+                <div class="feedback__block">
+                    <p class="feedback__text text_feedback font_white">Working with Portfolio was an absolute pleasure. She took the time to understans our brand and vision, and created stunning designs that exceded our expectations. Highly recomend!</p>
+                    <div class="feedback__author">
+                        <p class="author__text title_h4 font_white">John</p>
+                        <p class="author__text title_h4 font_white">Creator Portfolio</p>
+                    </div>
                 </div>
-                <div class="arrows__right">
-                    <img class="img" src="" alt="" srcset="">
+                <div class="feedback__arrows">
+                    <div class="arrows__left arrow">
+                        <img class="img" src="./assets/img/vectors/arrow_left_XL.svg" alt="">
+                    </div>
+                    <div class="arrows__right arrow">
+                        <img class="img" src="./assets/img/vectors/arrow_right_XL.svg" alt="">
+                    </div>
                 </div>
-            </div>
+            </div> 
         </section>
     </main>
-    <footer class="footer__container bg_black">
-        <h4 class="footer__title title_h4 font_white">HAVE SOMETHING IN MIND</h4>
-        <a href="#" class="footer__connected title_h1 font_white">GET CONNECTED</a>
+    <footer class="footer bg_black">
+        <div class="footer__container">
+            <h4 class="footer__title title_h4 font_white">HAVE SOMETHING IN MIND</h4>
+            <a href="#" class="footer__connected title_h1 font_white">GET CONNECTED</a>
+        </div>
     </footer>
 </body>
 </html>
