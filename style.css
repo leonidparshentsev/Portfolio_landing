@@ -11,12 +11,12 @@
     --font_white: #ffffff;
     --font_black: #252525;
     --font_orange: #ef8937;
+    cursor: default;
 }
 
 .img {
     width: 100%;
     height: 100%;
-
 }
 
 .bg_white {
@@ -99,7 +99,6 @@
         font-size: 28px;
         line-height: 30px;
     }
-
 }
 
 @media (max-width: 480px) { 
@@ -122,11 +121,16 @@
 .button {
     padding: 10px 36px 10px 22px;
     border-radius: 56px;
-
 }
 .button_orange {
     position: relative;
     background-color: var(--background_orange);
+}
+.button_orange:hover {
+    background-color: hsl(27, 85%, 65%);
+}
+.button_orange:active {
+    background-color: hsl(27, 85%, 50%);
 }
 .button_orange::after {
     content: '';
@@ -143,6 +147,12 @@
     position: relative;
     border: 1px solid var(--background_orange);
 }
+.button_transparent:hover {
+    background-color: hsl(27, 85%, 90%);
+}
+.button_transparent:active {
+    background-color: hsl(27, 85%, 80%);
+}
 
 .button_transparent::after {
     content: '';
@@ -155,14 +165,10 @@
     background-repeat: no-repeat;
 }
 
-.body {
-}
-
 /* ---------------HEADER */
 
 .header {
     max-width: 1440px;
-
     margin: 0 auto 40px;
     padding: 36px 200px 0;
     display: flex;
@@ -170,13 +176,29 @@
 .header__logo {
     margin-right: auto;
 }
-.header__nav {
-}
 .nav__container {
     display: flex;
 }
+.nav__list_item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
 .nav__list_item:not(:last-child) {
     margin-right: 62px;
+}
+.nav__list_item::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    height: 1px;
+    width: 0px;
+    background-color: var(--font_black);
+    transition: width 0.2s ease-in-out;
+}
+.nav__list_item:hover.nav__list_item::before {
+    transition: width 0.2s ease-in-out;
+    width: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -200,9 +222,6 @@
 }
 
 /* ---------------MAIN */
-
-.main {
-}
 
 /* ---------------FIRST_PAGE */
 
@@ -260,9 +279,6 @@
 .button_block__button {
     margin-right: 20px;
 }
-.first_page__image_block {
-}
-
 @media (max-width: 1355px) {
  
     .title_block__image_container {
@@ -348,8 +364,6 @@
 
 
 /* ---------------ABOUT */
-.about_page{
-}
 .about_page__container {
     max-width: 1440px;
     margin: 0 auto 64px;
@@ -376,10 +390,6 @@
 }
 
 /* ---------------SERVICES */
-
-.services_page {
-}
-
 .services_page__container {
     max-width: 1440px;
     margin: auto;
@@ -440,6 +450,7 @@
 }
 .dropdown_button__close {
     padding: 4px;
+    animation: turnRight 0.5s ease-in-out;
 }
 
 .dropdown__image_block {
@@ -463,21 +474,35 @@
 
 .dropdown_active .dropdown_button__active {
     display: block;
+    animation: turnLeft 0.5s ease-in-out;
 }
 
 .dropdown_active .dropdown__image_block {
     max-height: 400px;
 } 
 
-
-/* .dropdown_active .dropdown_button__active,
-.dropdown_active .dropdown__image_block {
-    display: block;
-} */
-
 .dropdown_active .dropdown_button__close {
     display: none;
 }
+
+@keyframes turnLeft {
+    from {
+        transform: rotateZ(45deg);
+    }
+    to {
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes turnRight {
+    from {
+        transform: rotateZ(-45deg);
+    }
+    to {
+        transform: rotateZ(0deg);
+    }
+}
+
 
 @media (max-width: 1024px) {
     .services_page__container {
@@ -498,16 +523,15 @@
 }
 
 @media (max-width: 400px) {
+    .services_page__container {
+        padding: 64px 25px 20px;
+    }   
     .dropdown__button {
         display: none;
     }
 }
 
 /* ---------------PROJECT PAGE */
-
-.project_page {
-}
-
 .project_page__container {
     max-width: 1440px;
     margin: auto;
@@ -623,8 +647,6 @@
 .feedback__title {
     margin-bottom: 40px;
 }
-.feedback__block {
-}
 .feedback__text {
     text-align: justify;
     padding-bottom: 34px;
@@ -642,16 +664,29 @@
     margin-bottom: 36px;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     width: 45px;
     height: 45px;
 }
+.arrow img {
+    transition: all 0.2s ease-in-out;
+}
+.arrow:hover img {
+    width: 35px;
+    height: 35px;
+}
+.arrow:active img {
+    width: 25px;
+    height: 25px;
+}
 .arrows__left {
     margin-right: 202px;
-}
-.arrows__right {
 }
 
 @media (max-width: 1024px) {
