@@ -126,12 +126,22 @@
     position: relative;
     background-color: var(--background_orange);
 }
-.button_orange:hover {
+/* .button_orange:hover {
     background-color: hsl(27, 85%, 65%);
 }
 .button_orange:active {
     background-color: hsl(27, 85%, 50%);
+} */
+
+@media (min-width: 481px) { 
+    .button_orange:hover {
+        background-color: hsl(27, 85%, 65%);
+    }
+    .button_orange:active {
+        background-color: hsl(27, 85%, 50%);
+    }
 }
+
 .button_orange::after {
     content: '';
     position: absolute;
@@ -147,11 +157,14 @@
     position: relative;
     border: 1px solid var(--background_orange);
 }
-.button_transparent:hover {
-    background-color: hsl(27, 85%, 90%);
-}
-.button_transparent:active {
-    background-color: hsl(27, 85%, 80%);
+
+@media (min-width: 481px) { 
+    .button_transparent:hover {
+        background-color: hsl(27, 85%, 90%);
+    }
+    .button_transparent:active {
+        background-color: hsl(27, 85%, 80%);
+    }
 }
 
 .button_transparent::after {
@@ -677,13 +690,16 @@
 .arrow img {
     transition: all 0.2s ease-in-out;
 }
-.arrow:hover img {
-    width: 35px;
-    height: 35px;
-}
-.arrow:active img {
-    width: 25px;
-    height: 25px;
+
+@media (min-width: 481px) { 
+    .arrow:hover img {
+        width: 35px;
+        height: 35px;
+    }
+    .arrow:active img {
+        width: 25px;
+        height: 25px;
+    }
 }
 .arrows__left {
     margin-right: 202px;
