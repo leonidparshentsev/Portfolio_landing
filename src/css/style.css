@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Lupio";
-    src: url('./assets/fonts/Lupio/Demo_Fonts/Fontspring-DEMO-lupio-semibold.otf') format("opentype");
+    src: url('../../assets/fonts/Lupio/Demo_Fonts/Fontspring-DEMO-lupio-semibold.otf') format("opentype");
     font-weight: semibold;
 }
 
@@ -145,7 +145,7 @@
 .button_orange::after {
     content: '';
     position: absolute;
-    background: url(./assets/img/vectors/arrow_up_black_small.svg);
+    background: url(../../assets/img/vectors/arrow_up_black_small.svg);
     top: 12px;
     right: 16px;
     width: 14px;
@@ -170,7 +170,7 @@
 .button_transparent::after {
     content: '';
     position: absolute;
-    background: url(./assets/img/vectors/arrow_up_orange_small.svg);
+    background: url(../../assets/img/vectors/arrow_up_orange_small.svg);
     top: 12px;
     right: 16px;
     width: 14px;
@@ -274,7 +274,7 @@
     width: 38px;
     height: 38px;
     border-radius: 50%;
-    background: url(./assets/img/vectors/header_img_after.svg);
+    background: url(../../assets/img/vectors/header_img_after.svg);
     background-repeat: no-repeat;
     background-position-x: 15px;
     background-position-y: center;

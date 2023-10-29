@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body class="body bg_white">
     <header class="header">
@@ -20,13 +20,13 @@
         <nav class="header__nav">
             <ul class="nav__container">
                 <li class="nav__list_item text font_black">
-                    <a href="#">ABOUT</a>    
+                    <a href="#about">ABOUT</a>    
                 </li>
                 <li class="nav__list_item text font_black">
-                    <a href="#">PROJECT</a>
+                    <a href="#projects">PROJECTS</a>
                 </li>
                 <li class="nav__list_item text font_black">
-                    <a href="#">CONTACTS</a>
+                    <a href="#contacts">CONTACTS</a>
                 </li>
             </ul>
         </nav>
@@ -51,14 +51,14 @@
                 <img class="img" src="./assets/img/first_page_mainTiny.png" alt="First page illustration">
             </div>
         </section>
-        <section class="about_page__container">
+        <section class="about_page__container" id="about">
             <h4 class="about_page__title title_h4 font_black">ABOUT ME</h4>
             <p class="about_page__text text_h1 font_black">
-                COLLABORATE WITH ME, A PASSIONATE AND INNOVATIVE NYC−BASED FREELANCE GRAPHIC DESIGNER, TO ELEVATE YOUR BRAND’S
+                COLLABORATE WITH US, A PASSIONATE AND INNOVATIVE NYC−BASED FREELANCE GRAPHIC DESIGNERS, TO ELEVATE YOUR BRAND’S
                 VISUAL IDENTITY TODAY.
             </p>
         </section>
-        <section class="services_page bg_black">
+        <section class="services_page bg_black" id="projects">
             <div class="services_page__container">
                 <h2 class="services_page__title title_h2 font_white">SERVICES</h2>
                 <ul class="services_page__dropdown">
@@ -171,14 +171,14 @@
                 <h2 class="feedback__title title_h2 font_white">TESTIMONIALS</h2>
                 <div class="feedback__wrapper">
                     <div class="feedback__block">
-                        <p class="feedback__text text_feedback font_white">Working with Portfolio was an absolute pleasure. She took the time to understans our brand and vision, and created stunning designs that exceded our expectations. Highly recomend!</p>
+                        <p class="feedback__text text_feedback font_white">Working with Portfolio was an absolute pleasure. They took the time to understans our brand and vision, and created stunning designs that exceded our expectations. Highly recomend!</p>
                         <div class="feedback__author">
-                            <p class="author__text title_h4 font_white">John</p>
-                            <p class="author__text title_h4 font_white">Creator Portfolio</p>
+                            <p class="author__text title_h4 font_white">Alice</p>
+                            <p class="author__text title_h4 font_white">Product Lead</p>
                         </div>
                     </div>
                     <div class="feedback__block" hidden>
-                        <p class="feedback__text text_feedback font_white">She took the time to understans our brand and vision, and created stunning designs that exceded our expectations. Working with Portfolio was an absolute pleasure.  Highly recomend!</p>
+                        <p class="feedback__text text_feedback font_white">They took the time to understans our brand and vision, and created stunning designs that exceded our expectations. Working with Portfolio was an absolute pleasure.  Highly recomend!</p>
                         <div class="feedback__author">
                             <p class="author__text title_h4 font_white">John Seena</p>
                             <p class="author__text title_h4 font_white">Creator</p>
@@ -196,13 +196,13 @@
             </div> 
         </section>
     </main>
-    <footer class="footer bg_black">
+    <footer class="footer bg_black" id="contacts">
         <div class="footer__container">
             <h4 class="footer__title title_h4 font_white">HAVE SOMETHING IN MIND</h4>
             <a href="#" class="footer__connected title_h1 font_white">GET CONNECTED</a>
         </div>
     </footer>
-    <script src="dropdown.js"></script>
-    <script src="scrollComments.js"></script>
+    <script src="src/js/scrollComments.js"></script>
+    <script src="src/js/dropdown.js"></script>
 </body>
 </html>
